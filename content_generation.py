@@ -1,9 +1,13 @@
 # AI Content generation
 
+import os
+from dotenv import load_dotenv, dotenv_values
 import openai
 
+load_dotenv
+
 def generate_newsletter_content():
-    openai.api_key = '[api key]'
+    openai.api_key = os.getenv("API_KEY")
 
     response = openai.Completion.create(
         model = "text-davinci-003",
