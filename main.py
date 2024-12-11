@@ -9,7 +9,7 @@ def main():
     newsletter_content = generate_newsletter_content()
 
     # Load users from file
-    users = load_users
+    users = load_users()
 
     # Send newsletter via email
     subject = "Your Weekly Newsletter"
