@@ -11,7 +11,7 @@ def generate_newsletter_content():
 
     response = openai.Completion.create(
         model = "text-davinci-003",
-        prompt = "Create a weekly newsletter about the latest tech news.",
+        prompt = "Create a weekly newsletter about the latest tech news and summarize it into a clearly formatted list.",
         max_tokens = 500
     )   
     
